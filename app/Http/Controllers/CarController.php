@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Car;
 use App\Models\Headquarter;
 use App\Models\Engine;
+use App\Models\Product;
 class CarController extends Controller
 {
     /**
@@ -52,6 +53,8 @@ class CarController extends Controller
         //
         
          $car = Car::find($id);
+         $product = Product::find($id);
+         print_r($product);
         //  $hq = $car->headquarter;
          //dd($hq);
     //    $hq = Headquarter::find($id);
